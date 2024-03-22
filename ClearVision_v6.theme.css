@@ -27,11 +27,11 @@
   --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
 
   /* STATUS COLORS */
-  --online-color: #593695; /* online status color (hex, rgb or hsl) [default: #43b581] */
-  --idle-color: #593695; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
-  --dnd-color: #593695; /* dnd status color (hex, rgb or hsl) [default: #982929] */
-  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
-  --offline-color: #593695; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  --online-color: #8000ff; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #8000ff; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #8000ff; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #8000ff; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #8000ff; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
   /* GENERAL */
   --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
