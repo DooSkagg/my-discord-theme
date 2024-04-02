@@ -12,8 +12,6 @@
 
 /* IMPORT CSS */
 @import url(https://clearvision.github.io/ClearVision-v6/main.css);
-@import url(https://clearvision.github.io/Addons/transparency.css);
-@import url(https://clearvision.github.io/Addons/serversize.css);
 @import url(https://clearvision.github.io/Addons/speech-bubbles.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
 
@@ -34,17 +32,17 @@
   --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
 
   /* GENERAL */
-  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --main-font: Segoe UI; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
   --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
   --text-normal: rgb(255, 255, 255); /* color of default discord text */
-  --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
-  --channels-width: 252px; /* channel list width (240px for Discord default) [default: 220px] */
-  --members-width: 230px; /* member list width [default: 240px] */
+  --text-muted: rgb(158, 158, 158); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+  --channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+  --members-width: 240px; /* member list width [default: 240px] */
 
   /* APP BACKGROUND */
-  --background-shading: 0%; /* app background shading (0 for complete smoothness) [default: 100%] */
-  --background-overlay: none; /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-  --background-image: rgba(25, 25, 25, 0.6); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)] */
+  --background-shading: 25%; /* app background shading (0 for complete smoothness) [default: 100%] */
+  --background-overlay: rgba(0, 0, 0, 0.35); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+  --background-image: none; /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
   --background-position: center; /* app background position [default: center] */
   --background-size: cover; /* app background size [default: cover] */
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -55,21 +53,21 @@
   --background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
   --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
   --background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
-  --background-blur: 10px; /* app background blur [default: 0px] */
+  --background-blur: 0px; /* app background blur [default: 0px] */
 
   /* HOME BUTTON ICON */
   --home-icon: url(https://i.imgur.com/233d55Y.gif); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
   --home-position: center; /* home button icon position [default: center] */
-  --home-size: 50px; /* home button icon size [default: 40px] */
+  --home-size: 48px; /* home button icon size [default: 40px] */
 
   /* CHANNEL COLORS */
   --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-  --channel-color: rgba(255, 255, 255, 1); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+  --channel-color: rgba(255, 255, 255, 0.75); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
   --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-  --muted-color: rgba(156, 156, 156, 1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
   /* MODAL BACKDROP */
-  --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+  --backdrop-overlay: rgba(0, 0, 0, 0.85); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
   --backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
   --backdrop-position: var(--background-position); /* modal backdrop position [default: var(--background-position)] */
   --backdrop-size: var(--background-size); /* modal backdrop size [default: var(--background-size)] */
@@ -96,7 +94,7 @@
   --user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(--background-grayscale)] */
   --user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(--background-sepia)] */
   --user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
-  --user-popout-overlay: rgba(0, 0, 0, 0.6); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
+  --user-popout-overlay: rgba(0, 0, 0, 0.85); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
 
   /* USER MODAL BACKGROUND */
   --user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
@@ -116,10 +114,7 @@
   --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
   --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
   --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
-  
-  /* Server Size */
-  --server-size: 45px;
-  
+
   /* Speech Bubbbles */
   --bubble-color: rgba(16, 16, 16, 0.9);
   --bubble-hover-color: rgba(16, 16, 16, 1);
